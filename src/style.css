@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+.font-mono {
+  font-family: 'Fira Code', monospace;
+}
+/* Refined scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; /* bg-slate-900 */
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; /* bg-slate-700 */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; /* bg-slate-600 */
+}
+/* CodeMirror styling overrides */
+.cm-editor {
+  font-size: 0.9rem;
+  border-radius: 0.375rem;
+  background-color: #020617; /* slate-950 */
+}
+.cm-editor .cm-gutters {
+  background-color: #020617; /* slate-950 */
+  border-right: 1px solid #334155; /* slate-700 */
+}
+
+/* Custom styles for rendered markdown/html output */
+.prose-output {
+  line-height: 1.7;
+}
+.prose-output h1, .prose-output h2, .prose-output h3, .prose-output h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  border-bottom: 1px solid #334155; /* slate-700 */
+  padding-bottom: 0.3em;
+}
+.prose-output h1 { font-size: 1.875rem; color: #e2e8f0; } /* slate-200 */
+.prose-output h2 { font-size: 1.5rem; color: #e2e8f0; } /* slate-200 */
+.prose-output h3 { font-size: 1.25rem; color: #e2e8f0; } /* slate-200 */
+.prose-output p { margin-bottom: 1em; }
+.prose-output table {
+  width: auto;
+  border-collapse: collapse;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+.prose-output th, .prose-output td {
+  border: 1px solid #475569; /* slate-600 */
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.prose-output th {
+  background-color: #334155; /* slate-700 */
+  font-weight: 600;
+}
+.prose-output tr:nth-child(even) {
+  background-color: #1e293b; /* slate-800 */
+}
+.prose-output a {
+  color: #38bdf8; /* text-sky-400 */
+  text-decoration: none;
+  border-bottom: 1px solid #38bdf8;
+  transition: color 0.2s, border-color 0.2s;
+}
+.prose-output a:hover { color: #7dd3fc; border-color: #7dd3fc; } /* text-sky-300 */
+.prose-output code {
+  background-color: #334155; /* slate-700 */
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  border-radius: 6px;
+  font-family: 'Fira Code', monospace;
+}
+.prose-output pre > code {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  border-radius: 0;
+}
+.prose-output pre {
+  background-color: #020617; /* slate-950 */
+  padding: 1em;
+  border-radius: 0.375rem;
+  overflow-x: auto;
+  border: 1px solid #334155; /* slate-700 */
+}
+.prose-output blockquote {
+  border-left: 4px solid #475569; /* slate-600 */
+  padding-left: 1em;
+  margin-left: 0;
+  color: #94a3b8; /* text-slate-400 */
+}

@@ -1,0 +1,7 @@
+{
+  "name": "jupyter-connect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

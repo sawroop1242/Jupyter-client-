@@ -1,0 +1,5 @@
+{
+  "name": "Jupyter Mobile Connect",
+  "description": "A mobile-friendly web client for connecting to and interacting with Jupyter Notebook servers. Browse files, view notebooks, and execute code from anywhere.",
+  "requestFramePermissions": []
+}
