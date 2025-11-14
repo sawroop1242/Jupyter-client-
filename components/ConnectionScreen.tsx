@@ -4,6 +4,7 @@ import { PlusIcon, PencilIcon, TrashIcon, ServerIcon, SpinnerIcon } from './Icon
 
 interface ConnectionScreenProps {
   onConnect: (server: IJupyterServer) => void;
+  onOpenUbuntuARM: () => void;
   error: string | null;
   isConnecting: boolean;
 }
@@ -57,7 +58,7 @@ const ServerModal: React.FC<{
 };
 
 
-export const ConnectionScreen: React.FC<ConnectionScreenProps> = ({ onConnect, error, isConnecting }) => {
+export const ConnectionScreen: React.FC<ConnectionScreenProps> = ({ onConnect, onOpenUbuntuARM, error, isConnecting }) => {
   const [servers, setServers] = useState<IJupyterServer[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingServer, setEditingServer] = useState<IJupyterServer | null>(null);

@@ -51,3 +51,25 @@ export interface IKernel {
   execution_state: string;
   connections: number;
 }
+
+export interface IUbuntuARMConfig {
+  id: string;
+  name: string;
+  url: string;
+  token?: string;
+  architecture: 'arm64' | 'armv7';
+  distribution: string;
+}
+
+export interface ITerminalSession {
+  id: string;
+  config: IUbuntuARMConfig;
+  connected: boolean;
+  lastActivity: string;
+}
+
+export interface ITerminalMessage {
+  type: 'input' | 'output' | 'error' | 'control';
+  data: string;
+  timestamp: number;
+}
