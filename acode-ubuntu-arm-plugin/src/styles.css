@@ -1,0 +1,127 @@
+.ubuntu-arm-container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ubuntu-arm-controls {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #2d2d2d;
+  border-bottom: 1px solid #404040;
+}
+
+.ubuntu-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.start-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.start-btn:hover {
+  background-color: #218838;
+}
+
+.stop-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.stop-btn:hover {
+  background-color: #c82333;
+}
+
+.clear-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.clear-btn:hover {
+  background-color: #5a6268;
+}
+
+.ubuntu-arm-terminal {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #f0f0f0;
+  background-color: #1e1e1e;
+}
+
+.terminal-line {
+  margin: 2px 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.terminal-line.system {
+  color: #61afef;
+  font-weight: bold;
+}
+
+.terminal-line.success {
+  color: #98c379;
+}
+
+.terminal-line.error {
+  color: #e06c75;
+}
+
+.terminal-line.info {
+  color: #d19a66;
+}
+
+.terminal-line.command {
+  color: #c678dd;
+  font-weight: bold;
+}
+
+.terminal-line.output {
+  color: #abb2bf;
+}
+
+.icon.ubuntu-arm {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.icon.ubuntu-arm:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Scrollbar styling for terminal */
+.ubuntu-arm-terminal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ubuntu-arm-terminal::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.ubuntu-arm-terminal::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.ubuntu-arm-terminal::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}

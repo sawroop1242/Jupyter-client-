@@ -1,0 +1,17 @@
+{
+  "id": "com.acode.ubuntu.arm",
+  "name": "Ubuntu ARM Runner",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "icon": "icon.png",
+  "readme": "readme.md",
+  "files": [],
+  "minVersionCode": 290,
+  "author": {
+    "name": "Acode Developer",
+    "email": "developer@acode.app",
+    "github": "acode-ubuntu-arm"
+  },
+  "price": 0,
+  "source": "https://github.com/yourusername/acode-ubuntu-arm-plugin"
+}
